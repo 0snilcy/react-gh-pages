@@ -4,8 +4,7 @@ const fs = require("fs")
 const path = require("path")
 
 try {
-  console.log(github, github.context)
-  const repoName = github.event.repository.name
+  const repoName = github.context.payload.repository.name
   console.log(`Repository name ${repoName}!`)
 
   const routerFilePath = path.join(__dirname, core.getInput("router-file"))
