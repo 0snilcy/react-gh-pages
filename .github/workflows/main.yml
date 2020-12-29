@@ -10,10 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Hello world action step
+
         uses: ./ # Uses an action in the root directory
-        id: hello
+        id: react-gh-pages
         with:
-          who-to-greet: 'Mona the Octocat'
+          router-file: '/test/src/components/app/app.jsx'
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"

@@ -5,6 +5,10 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  router-file: 
+    description: 'Path to file with BrowserRouter'
+    required: true
+    default: 'src/components/app/app.jsx'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
