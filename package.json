@@ -13,7 +13,8 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
-    "find-up": "^5.0.0"
+    "find-up": "^5.0.0",
+    "node-html-parser": "^2.0.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"
