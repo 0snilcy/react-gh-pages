@@ -5,7 +5,7 @@ module.exports = (routerFilePath, repoName) => {
 
   const file = fs.readFileSync(routerFilePath, 'utf-8')
   const newFile = file.replace(
-    /<BrowserRouter (.*?)>/,
+    /<BrowserRouter(.*?)>/,
     `<BrowserRouter $1 basename="/${repoName}">`
   )
 
